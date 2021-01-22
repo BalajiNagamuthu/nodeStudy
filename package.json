@@ -1,0 +1,23 @@
+{
+  "name": "nodesample",
+  "version": "1.0.0",
+  "description": "Workout samples to learn node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://dineshnagamuthu.visualstudio.com/NodeSample/_git/NodeSample"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "nodemon": "^2.0.6",
+    "postman-request": "^2.88.1-postman.28",
+    "validator": "^13.5.2",
+    "yargs": "^16.2.0"
+  }
+}
