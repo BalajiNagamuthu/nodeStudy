@@ -3,6 +3,7 @@ const path = require('path');
 const hbs = require('hbs')
 
 const app = express();
+const port = process.env.PORT || 8081
 
 const staticpath = path.join(__dirname, '/public');
 const viewsDir = path.join(__dirname, '/public/views');
@@ -64,6 +65,6 @@ app.get('*', (req, res) => {
     res.send('Error 404: Page not found');
 })
 
-var server = app.listen(8081, () => {
-    console.log('server is up on port 3001')
+app.listen(port, () => {
+    console.log('server is up on port ' + port)
 })

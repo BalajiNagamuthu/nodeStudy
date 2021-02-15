@@ -12,7 +12,7 @@ const message2 = document.querySelector('#msg2');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    fetch('http://localhost:8081/data?search=name&name=' + input.value).then((response) => {
+    fetch('/data?search=name&name=' + input.value).then((response) => {
         response.json().then((data) => {
             if(data.Error){
                 message2.textContent = data.Error
